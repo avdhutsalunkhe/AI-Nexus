@@ -17,7 +17,15 @@ connectDB();
 
 const app = express();
 
-app.use(cors({ origin: true, credentials: true }));
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://avonai-pviqplgsb-avdhuts-projects-c1f783d8.vercel.app',
+    'https://avonai.vercel.app'
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
