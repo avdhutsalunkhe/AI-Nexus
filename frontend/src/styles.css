@@ -1,0 +1,49 @@
+:root {
+  --bg: #0b1020;
+  --fg: #e8ecf1;
+  --accent: #5aa9e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #1e2745;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn {
+  padding: 10px 16px;
+  background: var(--accent);
+  color: #081019;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover, .btn:focus {
+  background: #85c7fa;
+  outline: none;
+}
+
+.card {
+  background: #111833;
+  border: 1px solid #1e2745;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
